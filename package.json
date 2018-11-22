@@ -1,0 +1,33 @@
+{
+  "name": "medium-lazy-load-polyfills",
+  "version": "1.0.0",
+  "description": "Example of lazy loading polyfills using webpack and dynamic imports",
+  "main": "src/index.js",
+  "author": "Piotr Kuczynski <piotr.kuczynski@gmail.com>",
+  "license": "MIT",
+  "browserslist": [
+    "last 2 versions",
+    "not ie < 11"
+  ],
+  "dependencies": {
+    "whatwg-fetch": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.5",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.1.5",
+    "babel-loader": "^8.0.4",
+    "clean-webpack-plugin": "^1.0.0",
+    "copy-webpack-plugin": "^4.6.0",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "scripts": {
+    "build": "webpack --mode=production",
+    "start": "webpack-dev-server --mode=development"
+  }
+}
